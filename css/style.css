@@ -1,0 +1,34 @@
+body {
+
+}
+#navbar {
+    background-image: url(/images/awning.png);
+}
+p {
+    font-family: 'Josefin Sans';
+    color: #660018;
+}
+h2 {
+    font-family: 'Lobster Two';
+    color: #660018;  
+}
+h3 {
+    font-family: 'Lobster Two';
+    color: #660018;
+}
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+.intro {
+    display: grid;
+}
+.location {
+    display: grid;
+}
+.fb-header {
+
+}
+.footer {
+    display: grid;
+}
