@@ -19,16 +19,21 @@ h3 {
 li {
     list-style-type: none;
     display: inline-block;
+    font-family: 'Josefin Sans';
+    color: #660018;
 }
 .intro {
     display: grid;
+    grid-template-columns: 50% 50%;
 }
 .location {
     display: grid;
+    grid-template-columns: 50% 50%;
 }
 .fb-header {
 
 }
 .footer {
     display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }
