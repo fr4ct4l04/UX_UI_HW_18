@@ -2,7 +2,11 @@ body {
 
 }
 #navbar {
-    background-image: url(/images/awning.png);
+    background-image: url("../images/awning.png");
+    background-repeat: no-repeat;
+    display: grid;
+    padding: 3%;
+    grid-template-columns: 30% 60% 10%;
 }
 p {
     font-family: 'Josefin Sans';
@@ -21,12 +25,35 @@ li {
     display: inline-block;
     font-family: 'Josefin Sans';
     color: #660018;
+    padding-left: 8%;
 }
 .intro {
+    margin-top: 3%;
     display: grid;
     grid-template-columns: 50% 50%;
 }
+.intro-contact {
+    margin: 3%;
+    text-align: center;
+}
+.contact-info {
+    padding: 3%;
+}
+.form {
+    background-color: #97C29A;
+    padding: 3%;
+}
+.box-1 {
+    color: #fffde4;
+}
+.send-button {
+    display: inline-block;
+    width: 50px;
+    background-color: #660018;
+    text-align: center;
+}
 .location {
+    margin-top: 3%;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -34,6 +61,9 @@ li {
 
 }
 .footer {
+    background-image: url("../images/footer.png");
+    background-repeat: no-repeat;
+    padding: 3%;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 20% 15% 30% 15% 10%;
 }
