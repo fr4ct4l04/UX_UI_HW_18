@@ -37,11 +37,14 @@ li {
     text-align: center;
 }
 .contact-info {
+    margin-left: 15%;
     padding: 3%;
 }
 .form {
     background-color: #97C29A;
+    width: 70%;
     padding: 3%;
+    margin-left: 20%;
 }
 .box-1 {
     color: #fffde4;
@@ -55,7 +58,7 @@ li {
 .location {
     margin-top: 3%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 25% 25%;
 }
 .fb-header {
 
