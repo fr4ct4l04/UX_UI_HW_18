@@ -5,7 +5,8 @@ body {
     background-image: url("../images/awning.png");
     background-repeat: no-repeat;
     display: grid;
-    padding: 3%;
+    width: 100%;
+    padding: 2%;
     grid-template-columns: 30% 60% 10%;
 }
 p {
@@ -30,7 +31,12 @@ li {
 .intro {
     margin-top: 3%;
     display: grid;
+    background-image: url("../images/contact\ painting.png");
+    background-repeat: none;
     grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "painting contact"
+    ;
 }
 .intro-contact {
     margin: 3%;
@@ -54,6 +60,7 @@ li {
     height: 40px;
     padding-top: 1%;
     padding-left: 3%;
+    padding-bottom: 1%;
     margin-bottom: 5%;
 }
 .message {
@@ -68,22 +75,28 @@ li {
     color: #fffde4;
 }
 .send-button {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    padding-left: 3%;
     width: 100px;
     background-color: #660018;
     text-align: center;
-    margin-left: 25%;
+    margin-left: 35%;
     margin-right: 25%;
 }
 .location {
     margin-top: 3%;
     margin-bottom: 3%;
     display: grid;
-    grid-template-columns: 50% 25% 25%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    "instagram-header location-and-hours"
+    "days hours";
     text-align: center;
 }
-.location-hours {
-    margin-left: 10%;
+.location-address {
+    margin-left: 15%;
 }
 .fb-header {
     display: flex;
@@ -95,5 +108,30 @@ li {
     background-repeat: no-repeat;
     padding: 3%;
     display: grid;
-    grid-template-columns: 20% 15% 30% 15% 10%;
+    grid-template-columns: 25% 15% 30% 15% 10%;
+}
+
+@media only screen and (max-width: 600) {
+    .intro {
+        margin-top: 3%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "painting"
+        "contact"
+        ;
+    }
+    .location {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+        "instagram-header"
+        "location-and-hours"
+        "days"
+        "hours";
+        text-align: center;
+    }
 }
