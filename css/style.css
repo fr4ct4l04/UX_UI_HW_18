@@ -36,13 +36,17 @@ li {
     grid-template-columns: 50% 50%;
     grid-template-rows: 25% 75%;
     grid-template-areas:
-    "painting contact"
+    "painting intro-contact"
     ;
+    grid-gap: 15px;
 }
-.painting {
+#painting {
     grid-area: painting;
+    background-image: url("../images/contact\ painting.png");
+    background-size: auto;
+    background-repeat: no-repeat;
 }
-.intro-contact {
+#intro-contact {
     margin: 3%;
     text-align: center;
 }
@@ -83,7 +87,10 @@ li {
 .send-button {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     padding-left: 3%;
+    padding-top: 1%;
+    padding-right: 3%;
     width: 100px;
     background-color: #660018;
     border-radius: 5px;
@@ -119,16 +126,27 @@ li {
 }
 
 @media only screen and (max-width: 600) {
-    .intro {
+    #navbar .li {
+        display: none;
+    }
+    #intro-grid {
         margin-top: 3%;
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        min-height: 500px;
+        height: 95vh;
         grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 75%;
         grid-template-areas:
         "painting"
-        "contact"
+        "intro-contact"
         ;
+        background-image: url("../images/contact\ painting.png");
+        background-size: auto;
+        background-repeat: no-repeat;
+        grid-gap: 15px;
     }
-    .location {
+    #location {
         margin-top: 3%;
         margin-bottom: 3%;
         display: grid;
@@ -140,5 +158,13 @@ li {
         "days"
         "hours";
         text-align: center;
+
+    }
+    #footer {
+        background-image: url("../images/footer.png");
+        background-repeat: no-repeat;
+        padding: 3%;
+        display: grid;
+        grid-template-columns: 25% 15% 30% 15% 10%;
     }
 }
