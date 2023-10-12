@@ -28,25 +28,29 @@ li {
     color: #660018;
     padding-left: 8%;
 }
-.intro {
+#intro-grid {
     margin-top: 3%;
     display: grid;
-    background-image: url("../images/contact\ painting.png");
-    background-repeat: none;
+    min-height: 500px;
+    height: 95vh;
     grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 75%;
     grid-template-areas:
     "painting contact"
     ;
+}
+.painting {
+    grid-area: painting;
 }
 .intro-contact {
     margin: 3%;
     text-align: center;
 }
-.contact-info {
+#contact-info {
     margin-left: 15%;
     padding: 3%;
 }
-.form {
+#form {
     background-color: #97C29A;
     width: 70%;
     height: 490px;
@@ -58,6 +62,7 @@ li {
     background-color: #fffde4;
     width: 97%;
     height: 40px;
+    border-radius: 5px;
     padding-top: 1%;
     padding-left: 3%;
     padding-bottom: 1%;
@@ -67,6 +72,7 @@ li {
     background-color: #fffde4;
     width: 97%;
     height: 250px;
+    border-radius: 5px;
     padding-top: 1%;
     padding-left: 3%;
     margin-bottom: 5%;
@@ -80,11 +86,12 @@ li {
     padding-left: 3%;
     width: 100px;
     background-color: #660018;
+    border-radius: 5px;
     text-align: center;
     margin-left: 35%;
     margin-right: 25%;
 }
-.location {
+#location {
     margin-top: 3%;
     margin-bottom: 3%;
     display: grid;
@@ -98,12 +105,12 @@ li {
 .location-address {
     margin-left: 15%;
 }
-.fb-header {
+#fb-header {
     display: flex;
     justify-content: center;
     margin-bottom: 3%;
 }
-.footer {
+#footer {
     background-image: url("../images/footer.png");
     background-repeat: no-repeat;
     padding: 3%;
